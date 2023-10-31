@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">zz
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Proxima Nova', sans-serif;
+        }
+        .hero {
+            background: url('bg2.jpg') no-repeat center/cover;
+            min-height: 100vh;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+    <title>Jansher Ameer</title>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-semibold">Jansher Ameer</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:opacity-75 transition">Home</a>
+            <a href="#about" class="hover:opacity-75 transition">About</a>
+            <a href="#Portfolio" class="hover:opacity-75 transition">Portfolio</a>
+            <a href="#service" class="hover:opacity-75 transition">Services</a>
+            <a href="#contact" class="hover:opacity-75 transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button class="navbar-mobile-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="mobile-menu hidden absolute top-16 right-0 bg-gray-800 w-48 py-2">
+                <a href="#" class="block px-4 py-2 text-white">Home</a>
+                <a href="#about" class="block px-4 py-2 text-white">About</a>
+                <a href="#portfolio" class="block px-4 py-2 text-white">Portfolio</a>
+                <a href="#service" class="block px-4 py-2 text-white">Services</a>
+                <a href="#service" class="block px-4 py-2 text-white">Contact</a>
+            </div>
+        </div>
+        <button class="ml-4 p-2 rounded-md bg-gray-700 hover:bg-gray-600 focus:bg-gray-600 transition" id="darkModeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</nav>
+
+<section class="hero relative flex items-center">
+    <div class="overlay absolute inset-0"></div>
+    <div class="hero-content container mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-semibold text-white animate__animated animate__fadeInDown">Welcome to My Portfolio</h1>
+        <p class="text-lg text-gray-300 mt-4 animate__animated animate__fadeInUp">I am a Web Developer</p>
+        <div class="mt-6">
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg animate__animated animate__fadeInUp inline-block">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</section>
+<section id="about" class="bg-gray-200 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 md:pr-8">
+                <img src="1.jpg" alt="Your Name" class="rounded-lg shadow-md w-full md:max-w-md h-auto animate__animated animate__fadeInLeft">
+            </div>
+            <div class="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-2 animate__animated animate__fadeInRight">About Me</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 animate__animated animate__fadeInRight">
+                    Hi there! I'm a passionate web developer with a strong foundation in front-end and back-end technologies. I enjoy creating intuitive and dynamic user experiences that leave a lasting impact.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed animate__animated animate__fadeInRight">
+                    When I'm not coding, you'll find me exploring new technologies, reading, or enjoying the great outdoors. I'm constantly seeking ways to expand my skill set and bring fresh ideas to every project.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Portfolio" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center animate__animated animate__fadeIn">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/1.jpg" alt="Project 1" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">VPN Websit</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros eu lectus commodo tristique.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/2.jpg" alt="Project 2" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Tailwind Css</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Fusce et quam eget est mollis tristique. Quisque eu erat eu mauris pharetra convallis nec a erat.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/3.png" alt="Project 2" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Landing</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Fusce et quam eget est mollis tristique. Quisque eu erat eu mauris pharetra convallis nec a erat.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/4.jpg" alt="Project 1" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">GostartUp</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros eu lectus commodo tristique.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/5.png" alt="Project 2" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Fusce et quam eget est mollis tristique. Quisque eu erat eu mauris pharetra convallis nec a erat.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden animate__animated animate__fadeIn">
+                <img src="images/6.jpg" alt="Project 2" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Start Up</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Fusce et quam eget est mollis tristique. Quisque eu erat eu mauris pharetra convallis nec a erat.</p>
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="service" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center animate__animated animate__fadeIn">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 animate__animated animate__fadeIn">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-500 text-white p-3 mr-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Web Design</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300">Crafting visually stunning and user-centric web designs that leave a lasting impression.</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 animate__animated animate__fadeIn">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-500 text-white p-3 mr-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Web Development</h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300">Building responsive and interactive websites with cutting-edge technologies and best practices.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 animate__animated animate__fadeIn">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-full bg-blue-500 text-white p-3 mr-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Website Maintenance </h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300">Building responsive and interactive websites with cutting-edge technologies and best practices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center animate__animated animate__fadeIn">Contact Me</h2>
+        <div class="max-w-lg mx-auto">
+            <form class="space-y-4 animate__animated animate__fadeIn">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+        <p class="animate__animated animate__fadeIn">&copy; 2023 Jansher Ameer. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("darkModeToggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+    });
+
+    document.querySelector(".navbar-mobile-button").addEventListener("click", function () {
+        document.querySelector(".mobile-menu").classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>

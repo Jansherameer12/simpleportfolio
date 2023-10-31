@@ -1,0 +1,15 @@
+.hidde{
+    color: black;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.show{
+    opacity: 1;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+
+    }
+}
